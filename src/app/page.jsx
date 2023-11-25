@@ -31,7 +31,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bgMain w-screen h-screen px-32   ">
+    <main className="bgMain w-screen h-screen px-32  ">
       <div
         className="glow"
         style={{
@@ -45,30 +45,39 @@ export default function Home() {
           <h3 className={`${rbm.className} hi pb-5 `}>Hi my name is</h3>
           <h1 className="text-5xl title font-extrabold pb-5">Agus Peiretti</h1>
           <h1 className="title text-2xl  pb-5">
-            Full-Stack Developer with Frontend Excellence
+            Full-Stack Developer with Frontend Excellence.
           </h1>
           <p className="parraf w-5/6">
-            "Focused on understanding user needs and translating them into
-            functional and compelling solutions."
+            Focused on understanding user needs and translating them into
+            functional and compelling solutions.
           </p>
         </div>
-        <div className="flex h-1/2 items-end pb-20">
-          <FontAwesomeIcon
+        <div className="flex flex-col h-1/2  w-full  items-start justify-between pb-20">
+          <div className="text-slate-200 ">
+            <ul className=" flex flex-col">
+              <li className=" cursor-pointer text-slate-200">About</li>
+              <li className="pt-4 cursor-pointer text-slate-200">Eperience</li>
+              <li className="pt-4 cursor-pointer text-slate-200">Proyects</li>
+            </ul>
+          </div>
+     <div>
+     <FontAwesomeIcon
             icon={faGithub}
-            className="w-6 text-slate-400 mr-4  cursor-pointer icons "
+            className=" text-slate-400 mr-4  cursor-pointer icons "
           />
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="w-6 text-slate-400 mr-4  cursor-pointer icons "
+            className=" text-slate-400 mr-4  cursor-pointer icons "
           />
           <FontAwesomeIcon
             icon={faWhatsapp}
-            className="w-6 text-slate-400  cursor-pointer mr-4 icons "
+            className=" text-slate-400  cursor-pointer mr-4 icons "
           />
           <FontAwesomeIcon
             icon={faEnvelope}
-            className="w-6 text-slate-400 cursor-pointer  mr-4 icons "
+            className=" text-slate-400 cursor-pointer  mr-4 icons "
           />
+     </div>
         </div>
       </div>
       <div className="rightContainer w-1/2 "></div>
