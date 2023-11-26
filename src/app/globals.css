@@ -50,7 +50,7 @@ body{
   transform: translate(-50%, -50%);
   z-index: 9998;
 }
-li {
+a {
   background-image: linear-gradient(
     to right,
     #ffffff,
@@ -67,7 +67,7 @@ li {
   transition: all 0.3s ease-in-out;
 }
 
-li:before {
+a:before {
   content: '';
   background: #f6f6f6;
   display: block;
@@ -79,10 +79,10 @@ li:before {
   transition: all 0.3s ease-in-out;
 }
 
-li:hover {
+a:hover {
  background-position: 0;
 }
 
-li:hover::before {
+a:hover::before {
   width:100%;
 }
