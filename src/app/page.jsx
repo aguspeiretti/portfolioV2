@@ -119,28 +119,27 @@ export default function Home() {
         </div>
       </div>
       <div className="rightContainer w-1/2  text-slate-400 pr-32 flex flex-col overflow-y-scroll  ">
-        <p className="pt-32 mb-32" id="about">
-          Hello, I am Agus Peiretti, a Fullstack MERN developer. I have trained
-          with a solid foundation in{" "}
-          <strong className="text-slate-100 ">MongoDB</strong>,{" "}
+        <p className="pt-32" id="about">
+          Hello there, I'm Agus Peiretti, a Fullstack MERN developer. I've got a
+          solid grip on
+          <strong className="text-slate-100 "> MongoDB</strong>,{" "}
           <strong className="text-slate-100 ">Express</strong>,{" "}
           <strong className="text-slate-100 ">React</strong>, and{" "}
-          <strong className="text-slate-100 ">Node.js</strong> technologies. I
-          love creating complete and dynamic applications from scratch, covering
-          both the server side and the user experience, although I continue to
-          train in technologies such as{" "}
-          <strong className="text-slate-100 ">Next.js</strong> and{" "}
-          <strong className="text-slate-100 ">
-            {" "}
-            mobile application development.
-          </strong>{" "}
-          I think that an important part is to be able to adapt to a constantly
-          evolving technological environment. That’s why I keep myself updated
-          and in constant study. I see each project as an opportunity to
-          demonstrate my creativity, and one of my objectives is focused on
-          trying to understand the user’s needs and transform them into
-          functional and attractive solutions. You can see some of my projects
-          below.
+          <strong className="text-slate-100 ">Node.js</strong> I get a kick out
+          of building kick-ass applications from the ground up, covering both
+          the techy server side and the user-friendly experience. Lately, I've
+          been diving into
+          <strong className="text-slate-100 "> Next.js</strong> and the exciting
+          world of
+          <strong className="text-slate-100 "> mobile app development</strong>.
+          I believe in staying on the tech pulse, so I'm always learning and
+          keeping myself up-to-date.
+        </p>
+        <p className="mt-8 mb-32">
+          For me, each project is a chance to let my creative juices flow. I'm
+          all about understanding what users really need and turning those needs
+          into slick, functional, and eye-catching solutions. Check out some of
+          my cool projects below!
         </p>
         <section className="w-full " id="section-experience">
           <ol className="w-full">
