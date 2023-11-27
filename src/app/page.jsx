@@ -10,6 +10,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { fa1 } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import Image from "next/image";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 const pp = Poppins({ subsets: ["latin"], weight: "400" });
@@ -17,6 +19,13 @@ const rbm = Roboto_Mono({ subsets: ["latin"], weight: "600" });
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -55,33 +64,63 @@ export default function Home() {
         <div className="flex flex-col h-1/2  w-full  items-start justify-between pb-20">
           <div className="text-slate-200 ">
             <ul className=" flex flex-col">
-              <li className=" cursor-pointer ">About</li>
-              <li className="pt-4 cursor-pointer">Eperience</li>
-              <li className="pt-4 cursor-pointer">Proyects</li>
+              <li
+                onClick={() => scrollToSection("about")}
+                className="enlaces  cursor-pointer "
+              >
+                About
+              </li>
+
+              <li
+                onClick={() => scrollToSection("section-experience")}
+                className="enlaces pt-4 cursor-pointer"
+              >
+                Eperience
+              </li>
+              <li
+                onClick={() => scrollToSection("section-proyects")}
+                className="enlaces pt-4 cursor-pointer"
+              >
+                Proyects
+              </li>
             </ul>
           </div>
           <div>
-            <FontAwesomeIcon
-              icon={faGithub}
-              className=" text-slate-400 mr-4  cursor-pointer icons "
-            />
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className=" text-slate-400 mr-4  cursor-pointer icons "
-            />
-            <FontAwesomeIcon
-              icon={faWhatsapp}
-              className=" text-slate-400  cursor-pointer mr-4 icons "
-            />
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className=" text-slate-400 cursor-pointer  mr-4 icons "
-            />
+            <Link href="https://github.com/aguspeiretti" target="_blank">
+              <FontAwesomeIcon
+                icon={faGithub}
+                className=" text-slate-400 mr-4  cursor-pointer icons "
+              />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/agus-peiretti/"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className=" text-slate-400 mr-4  cursor-pointer icons "
+              />
+            </Link>
+            <Link
+              href="https://api.whatsapp.com/send/?phone=543518015096&text&type=phone_number&app_absent=0"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faWhatsapp}
+                className=" text-slate-400  cursor-pointer mr-4 icons "
+              />
+            </Link>
+            <a href="mailto:tu_correo@ejemplo.com" target="_blank">
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className=" text-slate-400 cursor-pointer  mr-4 icons "
+              />
+            </a>
           </div>
         </div>
       </div>
-      <div className="rightContainer w-1/2 pt-32 text-slate-400 pr-32 flex flex-col overflow-y-scroll">
-        <p className="mb-32">
+      <div className="rightContainer w-1/2  text-slate-400 pr-32 flex flex-col overflow-y-scroll  ">
+        <p className="pt-32 mb-32" id="about">
           Hello, I am Agus Peiretti, a Fullstack MERN developer. I have trained
           with a solid foundation in{" "}
           <strong className="text-slate-100 ">MongoDB</strong>,{" "}
@@ -104,7 +143,7 @@ export default function Home() {
           functional and attractive solutions. You can see some of my projects
           below.
         </p>
-        <section className="w-full ">
+        <section className="w-full " id="section-experience">
           <ol className="w-full">
             <li className="w-full">
               <div className="display flex w-full">
@@ -155,7 +194,7 @@ export default function Home() {
                 </div>
               </div>
             </li>
-            <li className="w-full mt-12">
+            <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
               <div className="display flex w-full">
                 <header class=" mb-2 mt-1 mr-8 text-xs font-semibold uppercase whitespace-nowrap ">
                   jun - ago 2023
@@ -189,7 +228,7 @@ export default function Home() {
                 </div>
               </div>
             </li>
-            <li className="w-full mt-12">
+            <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
               <div className="display flex w-full">
                 <header class=" mb-2 mt-1 mr-8 text-xs font-semibold uppercase whitespace-nowrap ">
                   oct - dec 2022
@@ -227,7 +266,7 @@ export default function Home() {
                 </div>
               </div>
             </li>
-            <li className="w-full mt-12">
+            <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
               <div className="display flex w-full">
                 <header class=" mb-2 mt-1 mr-8 text-xs font-semibold uppercase whitespace-nowrap ">
                   jul - ago 2022
@@ -266,6 +305,210 @@ export default function Home() {
             </li>
           </ol>
         </section>
+        <section className="proyects mt-32" id="section-proyects">
+          <ul>
+            <Link href="https://mdq-surf-c23be.web.app/" target="_blank">
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class="w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/surf.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      MDQ Surf Shop
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      Introducing an e-commerce platform developed entirely in
+                      React, with the implementation of Redux for the cart
+                      functionality. Styles have been crafted using pure CSS.
+                      This site provides a comprehensive experience that
+                      includes a fully functional shopping cart, along with the
+                      ability to book classes."
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+            <Link href="https://forest-gym.web.app/" target="_blank">
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class=" w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/gym.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      Forest Gym
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      A platform that enables class reservations through email,
+                      complemented by a web presence providing relevant
+                      information.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+            <Link
+              href="https://aguspeiretti.github.io/ruca-textil/"
+              target="_blank"
+            >
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class=" w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/ruca.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      Ruca Textil
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      "The website in question stands out as a source of
+                      information and product reference in sample format.
+                      Providing an illustrative perspective, this page offers a
+                      selective and enlightening presentation of various
+                      products."
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+            <Link
+              href="https://aguspeiretti.github.io/tiendaVintashh/"
+              target="_blank"
+            >
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class=" w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/tienda.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      Tienda Vintash
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      This online platform serves as a showcase for
+                      representative products, enabling interested customers to
+                      establish contact through WhatsApp for more details and
+                      manage their inquiries in a personalized manner.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+            <Link href="https://donde-comemo.vercel.app/" target="_blank">
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class=" w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/cel.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      Donde comemo
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      Optimized for mobile devices, this project features a
+                      registration or login screen that activates the favorites
+                      function. The 'Home' displays an image carousel and
+                      provides access to the main categories. A bottom
+                      navigation menu facilitates exploration of sections such
+                      as Restaurants, Bars, Cafés, organized by zones and
+                      categories. Each section includes descriptive cards and
+                      links to expanded details
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+            <Link href="https://pitupedia-6c1ab.web.app/" target="_blank">
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class=" w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/pitu.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      Pitupedia
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      A mini personal project—a simple website aimed at
+                      promoting speech development in children through the
+                      association of images and sounds. An interactive
+                      experience designed to inspire and stimulate early
+                      learning.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+            <Link href="https://entriviados-g.web.app/" target="_blank">
+              {" "}
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class=" w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/trivia.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      Entriviados
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      A small trivia game designed to practice the fundamental
+                      basics of JavaScript. It provides the option to choose
+                      both categories and the playtime duration. Additionally,
+                      an Auth0 login feature has been incorporated for a
+                      personalized gaming experience.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+          </ul>
+        </section>
+        <footer className="mt-20 text-sm  mb-12">
+          <h3 className="font-extrabold text-slate-100">
+            Thanks for visiting my site.
+          </h3>
+          <p className="text-sm">
+            Currently, I am actively seeking new opportunities, and my contact
+            channels are always open, whether for job offers or just to say
+            hello! I will try to respond as soon as possible.
+          </p>
+        </footer>
       </div>
     </main>
   );

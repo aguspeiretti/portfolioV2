@@ -8,7 +8,7 @@
   --tercero: #9db2bf;
   --cuarto: #dde6ed;
 }
-body{
+body {
   overflow: hidden;
 }
 .bgMain {
@@ -23,14 +23,13 @@ body{
 .parraf {
   color: #e9eef2;
 }
-.icons{
+.icons {
   font-size: 25px;
-  transition:0.2s ease-in;
-  
+  transition: 0.2s ease-in;
 }
 .icons:hover {
   color: #ffffff;
-  transition:0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 .glow {
   width: 120vh;
@@ -41,7 +40,7 @@ body{
   background: radial-gradient(
     circle,
     rgba(63, 94, 135, 0.149) 0%,
-    rgba(63, 94, 135, 0.126)20%,
+    rgba(63, 94, 135, 0.126) 20%,
     #526d8210 40%,
     #526d820e 60%,
     #526d8200 80%,
@@ -50,7 +49,7 @@ body{
   transform: translate(-50%, -50%);
   z-index: 9998;
 }
-a {
+.enlaces {
   background-image: linear-gradient(
     to right,
     #ffffff,
@@ -67,8 +66,8 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-a:before {
-  content: '';
+.enlaces:before {
+  content: "";
   background: #f6f6f6;
   display: block;
   position: absolute;
@@ -79,10 +78,10 @@ a:before {
   transition: all 0.3s ease-in-out;
 }
 
-a:hover {
- background-position: 0;
+.enlaces:hover {
+  background-position: 0;
 }
 
-a:hover::before {
-  width:100%;
+.enlaces:hover::before {
+  width: 100%;
 }
