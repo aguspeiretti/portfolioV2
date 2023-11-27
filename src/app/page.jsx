@@ -110,12 +110,11 @@ export default function Home() {
                 className=" text-slate-400  cursor-pointer mr-4 icons "
               />
             </Link>
-            <a href="mailto:tu_correo@ejemplo.com" target="_blank">
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                className=" text-slate-400 cursor-pointer  mr-4 icons "
-              />
-            </a>
+
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className=" text-slate-400 cursor-pointer  mr-4 icons "
+            />
           </div>
         </div>
       </div>
