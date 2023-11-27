@@ -500,12 +500,12 @@ export default function Home() {
         </section>
         <footer className="mt-20 text-sm  mb-12">
           <h3 className="font-extrabold text-slate-100">
-            Thanks for visiting my site.
+            Thanks for checking out my site!
           </h3>
           <p className="text-sm">
-            Currently, I am actively seeking new opportunities, and my contact
-            channels are always open, whether for job offers or just to say
-            hello! I will try to respond as soon as possible.
+            Right now, I'm on the lookout for new opportunities. Hit me up
+            anytime, whether it's about job stuff or just to shoot the breeze!
+            I'll do my best to get back to you. Cheers!
           </p>
         </footer>
       </div>
