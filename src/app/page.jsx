@@ -154,11 +154,12 @@ export default function Home() {
                   </h3>
                   <h4>Frontend engineer </h4>
                   <p className="text-sm leading-normal mb-2 mt-2">
-                    I developed custom software for a local marketing company,
-                    specifically designed to facilitate mass email and WhatsApp
-                    messaging. Notable for its focus on security, it includes a
-                    secure login system and a form that automatically adds data
-                    to the database, streamlining information management.
+                    Development of a custom software for a local marketing
+                    company, specifically designed to facilitate mass email and
+                    WhatsApp messaging. Notable for its focus on security, it
+                    includes a secure login system and a form that automatically
+                    adds data to the database, streamlining information
+                    management.
                   </p>
                   <p className="text-sm leading-normal mb-2">
                     The platform allows for comprehensive management of users
@@ -203,7 +204,7 @@ export default function Home() {
                   </h3>
                   <h4>Frontend engineer </h4>
                   <p className="text-sm leading-normal mb-2 mt-2">
-                    I developed an e-commerce platform that provides a
+                    Development of an e-commerce platform that provides a
                     comprehensive experience for both users and administrators.
                     It includes a contact form and an efficient system for
                     sending orders through WhatsApp. For internal management,
@@ -375,11 +376,11 @@ export default function Home() {
                       Ruca Textil
                     </h3>
                     <p className="text-sm leading-normal mb-2 mt-2">
-                      "The website in question stands out as a source of
+                      The website in question stands out as a source of
                       information and product reference in sample format.
                       Providing an illustrative perspective, this page offers a
                       selective and enlightening presentation of various
-                      products."
+                      products.
                     </p>
                   </div>
                 </div>
