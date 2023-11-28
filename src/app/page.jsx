@@ -12,6 +12,7 @@ import { fa1 } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
+import Contador from "@/components/Contador";
 
 const inter = Inter({ subsets: ["latin"] });
 const pp = Poppins({ subsets: ["latin"], weight: "400" });
@@ -507,6 +508,7 @@ export default function Home() {
             anytime, whether it's about job stuff or just to shoot the breeze!
             I'll do my best to get back to you. Cheers!
           </p>
+          <Contador />
         </footer>
       </div>
     </main>
