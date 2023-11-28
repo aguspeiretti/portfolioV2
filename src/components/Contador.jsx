@@ -24,7 +24,9 @@ const Contador = () => {
 
   return (
     <div className="contadorVisitas flex items-center mt-4 justify-end">
-      <FontAwesomeIcon icon={faMugSaucer} />
+      <div className=" items-center">
+        <FontAwesomeIcon icon={faMugSaucer} />
+      </div>
       <p className="ml-2">visitor: {contador}</p>
     </div>
   );
