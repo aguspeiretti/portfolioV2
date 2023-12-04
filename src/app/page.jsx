@@ -42,16 +42,16 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bgMain w-screen h-screen pl-32 flex max-lg:flex-col max-lg:pl-10  ">
+    <main className="bgMain w-screen h-screen pl-32 flex max-lg:flex-col max-lg:pl-10 max-lg:overflow-y-scroll">
       <div
-        className="glow max-lg: hidden "
+        className="glow max-lg:hidden"
         style={{
           position: "absolute",
           left: mousePosition.x,
           top: mousePosition.y,
         }}
       ></div>
-      <div className="absolute top-8 right-10 text-slate-200 flex">
+      <div className="absolute top-8 right-10 text-slate-200 flex max-lg:relative max-lg:pl-10">
         <p
           className="cursor-pointer"
           onClick={() => {
@@ -70,7 +70,7 @@ export default function Home() {
           ESP
         </p>
       </div>
-      <div className="leftContainer w-1/2 h-screen pt-32 max-lg:w-full   ">
+      <div className="leftContainer w-1/2 h-screen pt-32 max-lg:w-full max-lg:h-full   ">
         <div className="h-1/2">
           <h3 className={`${rbm.className} hi pb-5 `}>
             {lenguaje ? "Hi my name is" : "Hola mi nombre es"}
@@ -144,7 +144,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="rightContainer w-1/2  text-slate-400 pr-32 flex flex-col overflow-y-scroll  max-lg:w-full  max-lg:pr-10">
+      <div className="rightContainer w-1/2  text-slate-400 pr-32 flex flex-col overflow-y-scroll  max-lg:w-full  max-lg:pr-10  max-lg:overflow-visible">
         {lenguaje ? (
           <p className="pt-32 max-lg:pt-0" id="about">
             Hello there, I'm Agus Peiretti, a Fullstack MERN developer. I've got
