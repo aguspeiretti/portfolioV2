@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <main className="bgMain w-screen h-screen pl-32 flex max-lg:flex-col max-lg:pl-10 max-lg:overflow-y-scroll">
       <div
-        className="glow max-lg:hidden"
+        className="glow "
         style={{
           position: "absolute",
           left: mousePosition.x,
@@ -163,7 +163,7 @@ export default function Home() {
             keeping myself up-to-date.
           </p>
         ) : (
-          <p className="pt-32" id="about">
+          <p className="pt-32 max-lg:pt-0" id="about">
             ¡Hola! Soy Agus Peiretti, un desarrollador Fullstack MERN. Tengo un
             sólido dominio de{" "}
             <strong className="text-slate-100 "> MongoDB</strong>,{" "}

@@ -85,3 +85,8 @@ body {
 .enlaces:hover::before {
   width: 100%;
 }
+@media (max-width: 790px) {
+  .glow {
+    display: none;
+  }
+}
