@@ -42,9 +42,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bgMain w-screen h-screen pl-32 flex  ">
+    <main className="bgMain w-screen h-screen pl-32 flex max-lg:flex-col max-lg:pl-10  ">
       <div
-        className="glow"
+        className="glow max-lg: hidden "
         style={{
           position: "absolute",
           left: mousePosition.x,
@@ -70,7 +70,7 @@ export default function Home() {
           ESP
         </p>
       </div>
-      <div className="leftContainer w-1/2 h-screen pt-32  ">
+      <div className="leftContainer w-1/2 h-screen pt-32 max-lg:w-full   ">
         <div className="h-1/2">
           <h3 className={`${rbm.className} hi pb-5 `}>
             {lenguaje ? "Hi my name is" : "Hola mi nombre es"}
@@ -144,9 +144,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="rightContainer w-1/2  text-slate-400 pr-32 flex flex-col overflow-y-scroll  ">
+      <div className="rightContainer w-1/2  text-slate-400 pr-32 flex flex-col overflow-y-scroll  max-lg:w-full  max-lg:pr-10">
         {lenguaje ? (
-          <p className="pt-32" id="about">
+          <p className="pt-32 max-lg:pt-0" id="about">
             Hello there, I'm Agus Peiretti, a Fullstack MERN developer. I've got
             a solid grip on
             <strong className="text-slate-100 "> MongoDB</strong>,{" "}
