@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, { useEffect, useState } from "react";
 import { Inter, Poppins, Roboto_Mono } from "next/font/google";
@@ -193,10 +194,55 @@ export default function Home() {
         </p>
         <section className="w-full " id="section-experience">
           <ol className="w-full">
-            <li className="w-full">
+            <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500">
               <div className="display flex w-full">
                 <header class=" mb-2 mt-1 mr-8 text-xs font-semibold uppercase whitespace-nowrap ">
-                  OCT — Present
+                  mar — present
+                </header>
+                <div className="">
+                  <h3 className="font-extrabold text-slate-100 ">
+                    Frontend - MundoJob
+                  </h3>
+                  <h4>Frontend engineer </h4>
+                  <p className="text-sm leading-normal mb-2 mt-2">
+                    {lenguaje
+                      ? "Developed custom widgets using React.js to integrate key functionalities of Zoho CRM into web applications, leveraging the SDK provided by Zoho CRM to access its API and utilize the CRM's capabilities within our applications. Currently, I am implementing dynamic and highly functional user interfaces."
+                      : "Desarrollo widgets personalizados utilizando React.js para integrar funcionalidades clave del CRM Zoho en aplicaciones web ,utilizando el SDK proporcionado por Zoho CRM para acceder a su API y aprovechar las capacidades del CRM dentro de nuestras aplicaciones.En este momento estoy implementando interfaces de usuario dinámicas y altamente funcionales, "}
+                  </p>
+                  <p className="text-sm leading-normal mb-2">
+                    {lenguaje
+                      ? "Enabling users to interact intuitively with Zoho CRM data from our web applications and working closely with the backend development team to ensure seamless integration between React.js widgets and the Zoho CRM API, ensuring optimal performance and a consistent user experience."
+                      : "Permitiendo a los usuarios interactuar de manera intuitiva con los datos del CRM Zoho desde nuestras aplicaciones web y Trabajando en estrecha colaboración con el equipo de desarrollo de backend para garantizar una integración fluida entre los widgets React.js y la API de Zoho CRM, asegurando un rendimiento óptimo y una experiencia de usuario consistente."}
+                  </p>
+                  <ul className="mt-2 flex flex-wrap">
+                    <li className="mr-1.5 mt-2">
+                      <div className="flex items-center rounded-full bg-sky-700/10 px-3 py-1 text-xs font-medium leading-5 text-zinc-300 ">
+                        React
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="flex items-center rounded-full bg-sky-700/10 px-3 py-1 text-xs font-medium leading-5 text-zinc-300 ">
+                        JavaScript
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="flex items-center rounded-full bg-sky-700/10 px-3 py-1 text-xs font-medium leading-5 text-zinc-300 ">
+                        Zoho
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="flex items-center rounded-full bg-sky-700/10 px-3 py-1 text-xs font-medium leading-5 text-zinc-300 ">
+                        NodeJs
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500">
+              <div className="display flex w-full">
+                <header class=" mb-2 mt-1 mr-8 text-xs font-semibold uppercase whitespace-nowrap ">
+                  oct — jan 2025
                 </header>
                 <div className="">
                   <h3 className="font-extrabold text-slate-100 ">
@@ -345,6 +391,102 @@ export default function Home() {
         </section>
         <section className="proyects mt-32" id="section-proyects">
           <ul>
+            <Link href="#" target="_blank">
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class="w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/horario.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      App Horarios
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      {lenguaje
+                        ? "This website is a web application that allows real-time viewing of office hours in other countries within the company, displaying both the current schedule and the local time in each country, including break times, segmented by country and department within the company. Additionally, the interface updates based on the user's IP address, providing a personalized and localized experience."
+                        : "Aplicacion web que permite visualizar en tiempo real los horarios de las oficinas en otros países de la empresa, mostrando tanto el horario actual en curso como la hora local en cada país, incluyendo los tiempos de descanso, todo organizado por país y área dentro de la empresa. Además, la interfaz se actualiza automáticamente según la dirección IP del país desde el cual se conecta el usuario, proporcionando una experiencia personalizada y localizada."}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+            <Link href="#" target="_blank">
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class="w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/ventas.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      Widget Ventas
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      {lenguaje
+                        ? "A sales-focused widget within the company, implementing a meticulous 4-step system. Each step featured robust validations to prevent data loss, accompanied by personalized error messages for smooth user guidance. Additionally, I integrated conditional renderings based on user selections, enhancing the adaptability and user experience of the widget."
+                        : "Widget enfocado en ventas dentro de la empresa, implementando un meticuloso sistema de 4 pasos. Cada paso contaba con sólidas validaciones para prevenir la pérdida de datos, acompañadas de mensajes de error personalizados para una guía fluida del usuario. Además, integré renderizaciones condicionales basadas en las selecciones del usuario, mejorando la adaptabilidad y la experiencia del usuario del widget."}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+            <Link href="#" target="_blank">
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class="w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/calendar.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      Zoho Calendar
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      {lenguaje
+                        ? " Customized calendar that integrated data from the Zoho API into React Big Calendar, adapting its functionality and aesthetics to provide a dynamic and visually appealing experience. I implemented a popup system to modify events directly from the calendar, collaborating closely with the design team to ensure seamless integration and an enhanced user experience."
+                        : "Calendario personalizado que integraba datos de la API de Zoho en React Big Calendar, adaptando su funcionalidad y estética para ofrecer una experiencia dinámica y visualmente atractiva. Implementé un sistema de popups para modificar eventos directamente desde el calendario, colaborando estrechamente con el equipo de diseño para garantizar una integración armoniosa y una experiencia de usuario mejorada."}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+            <Link href="#" target="_blank">
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class="w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/mailing.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      Sistema de Mailing automatico
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      {lenguaje
+                        ? "Development of a custom software for a local marketing company, specifically designed to facilitate mass email and WhatsApp messaging. Notable for its focus on security, it includes a secure login system and a form that automatically adds data to the database, streamlining information management.The platform allows for comprehensive management of users and companies, with functions for registration, modification, and deletion. It also incorporates the creation of broadcast lists for effectively segmenting personalized marketing campaigns."
+                        : "Desarrollo de un software personalizado para una empresa local de marketing, diseñado específicamente para facilitar el envío masivo de correos electrónicos y mensajes de WhatsApp. Destaca por su enfoque en la seguridad, incluyendo un sistema de inicio de sesión seguro y un formulario que agrega automáticamente datos a la base de datos, optimizando la gestión de la información.La plataforma permite la gestión integral de usuarios y empresas, con funciones para registro, modificación y eliminación. También incorpora la creación de listas de difusión para segmentar de manera efectiva campañas de marketing personalizadas"}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
             <Link href="https://mdq-surf-c23be.web.app/" target="_blank">
               <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
                 <div className="display flex w-full">
