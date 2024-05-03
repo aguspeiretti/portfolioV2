@@ -487,6 +487,33 @@ export default function Home() {
                 </div>
               </li>
             </Link>
+            <Link
+              href="https://akumaluniformes-three.vercel.app"
+              target="_blank"
+            >
+              <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
+                <div className="display flex w-full">
+                  <span class="w-1/6 mb-2 mt-1 mr-8  whitespace-nowrap ">
+                    <Image
+                      src={"/img/aku.png"}
+                      width={400}
+                      height={300}
+                      alt="proyecy1"
+                    />
+                  </span>
+                  <div className="w-5/6">
+                    <h3 className="font-extrabold text-slate-100 ">
+                      Akumal uniformes
+                    </h3>
+                    <p className="text-sm leading-normal mb-2 mt-2">
+                      {lenguaje
+                        ? " A website was developed with a style similar to that of an e-commerce, which presents a catalog of products organized by categories. Visitors have access to a detailed list of products along with their prices, and they have the ability to add and remove products from a shopping cart. Once the purchase process is completed, a summary of the selected products is shown, and the option to send the order via WhatsApp is offered.On the administrative side, a panel is included that allows CRUD operations (Create, Read, Update, and Delete) on all products. This provides complete control over the management of the product catalog, allowing the addition of new products, updating existing information, and removing products that are no longer available."
+                        : "Se desarrolló un sitio web con un estilo similar al de un e-commerce, el cual presenta un catálogo de productos organizados por categorías. Los visitantes tienen acceso a una lista detallada de productos junto con sus precios, y tienen la capacidad de agregar y eliminar productos de un carrito de compras. Una vez que se procede a finalizar la compra, se muestra un resumen de los productos seleccionados y se ofrece la opción de enviar el pedido a través de WhatsApp.En la parte administrativa, se incluye un panel que permite realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) sobre todos los productos. Esto proporciona un control completo sobre la gestión del catálogo de productos, permitiendo agregar nuevos productos, actualizar la información existente, y eliminar productos que ya no estén disponibles."}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
             <Link href="https://mdq-surf-c23be.web.app/" target="_blank">
               <li className="w-full mt-8 bg-indigo-100 bg-opacity-0 hover:bg-opacity-10 hover:backdrop-blur-lg rounded-md p-2 cursor-pointer duration-500 ">
                 <div className="display flex w-full">
